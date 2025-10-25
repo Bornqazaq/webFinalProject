@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KinoLite — Catalog</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <span class="brand__logo" aria-hidden="true"></span>
+                <span>KinoLite</span>
+            </a>
+            <nav class="nav__links" aria-label="Main navigation">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="catalog.html" aria-current="page">Catalog</a>
+                <a class="nav__link" href="profile.html">Profile</a>
+                <a class="nav__link" href="auth.html">Sign in</a>
+            </nav>
+            <div class="nav__actions">
+                <button id="themeToggle" class="btn btn--icon" aria-label="Toggle light/dark">🌓</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="container layout">
+        <!-- Sidebar filters -->
+        <aside class="sidebar" aria-label="Filters">
+            <section class="card">
+                <h2 class="card__title">Search</h2>
+                <div class="stack">
+                    <input id="search" class="input" type="search" placeholder="Title, actor…" />
+                    <!-- JS: oninput filter grid + save to localStorage -->
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card__title">Filters</h2>
+                <div class="stack">
+                    <label class="h3">Genre</label>
+                    <select id="genre" class="select">
+                        <option value="">Any</option>
+                        <option>Action</option>
+                        <option>Drama</option>
+                        <option>Comedy</option>
+                        <option>Thriller</option>
+                        <option>Sci-Fi</option>
+                    </select>
+
+                    <label class="h3">Year</label>
+                    <select id="year" class="select">
+                        <option value="">Any</option>
+                        <option>2025</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                    </select>
+
+                    <label class="h3">Rating</label>
+                    <select id="rating" class="select">
+                        <option value="">Any</option>
+                        <option>9+</option>
+                        <option>8+</option>
+                        <option>7+</option>
+                        <option>6+</option>
+                    </select>
+
+                    <button id="apply" class="btn btn--primary">Apply</button>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Results grid -->
+        <section aria-labelledby="results">
+            <h1 id="results" class="h1 mb">Results</h1>
+            <div id="grid" class="grid">
+                <!-- Static cards; JS team will render dynamic -->
+                <article class="movie card">
+                    <a href="details.html">
+                        <div class="movie__poster"><img src="images/poster-2.jpg" alt="Movie poster: Neon Nights" />
+                        </div>
+                        <h3 class="h3">Neon Nights</h3>
+                    </a>
+                    <div class="movie__meta"><span class="muted">2023 · Thriller</span><span class="badge">⭐ 7.9</span>
+                    </div>
+                </article>
+
+                <article class="movie card">
+                    <a href="details.html">
+                        <div class="movie__poster"><img src="images/poster-5.jpg" alt="Movie poster: Arctic Line" />
+                        </div>
+                        <h3 class="h3">Arctic Line</h3>
+                    </a>
+                    <div class="movie__meta"><span class="muted">2024 · Drama</span><span class="badge">⭐ 8.2</span>
+                    </div>
+                </article>
+
+                <article class="movie card">
+                    <a href="details.html">
+                        <div class="movie__poster"><img src="images/poster-6.jpg" alt="Movie poster: Quantum Drift" />
+                        </div>
+                        <h3 class="h3">Quantum Drift</h3>
+                    </a>
+                    <div class="movie__meta"><span class="muted">2025 · Sci-Fi</span><span class="badge">⭐ 8.6</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container row">
+            <p>© 2025 KinoLite</p><span class="muted">Catalog</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinoLite — Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header class="main-header">
+        <div class="container d-flex align-items-center justify-content-between py-3 flex-wrap">
+
+            <div class="logo d-flex align-items-center">
+                <h2 class="text-white fw-bold mb-0">KinoLite<span class="gradient-text">.net</span></h2>
+            </div>
+
+            <div class="search-box flex-grow-1 mx-3">
+                <input type="text" class="form-control search-input" placeholder="Поиск фильмов..." />
+            </div>
+
+            <div class="actions d-flex align-items-center gap-2">
+                <a href="signup.html" class="btn btn-dark rounded-pill">Зарегистрироваться</a>
+                <a href="login.html" class="btn gradient-btn rounded-pill">Войти</a>
+                <button id="themeToggle" class="btn btn-dark rounded-circle ms-1" title="Переключить тему">☀️</button>
+            </div>
+
+            <div class="actions d-flex align-items-center gap-2"><a href="profile.html"
+                    class="btn btn-dark rounded-circle" title="Профиль">
+                    👤
+                </a></div>
+        </div>
+
+        <nav class="nav-menu d-flex justify-content-center gap-4 py-2">
+            <a href="#" class="nav-link active">Все фильмы</a>
+            <a href="#">Трейлер</a>
+            <a href="#">Расписание</a>
+            <a href="#">Жанр</a>
+        </nav>
+    </header>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero-banner text-white">
+        <div class="container d-flex flex-column justify-content-center h-100">
+            <h1 class="fw-bold display-5">Наруто</h1>
+            <p class="mb-4">Посмотрите топовый сериал прямо сейчас!</p>
+            <a href="#" class="btn gradient-btn">Посмотреть топовый сериал</a>
+        </div>
+    </section>
+
+    <!-- ====== POPULAR MOVIES ====== -->
+    <section class="popular py-5">
+        <div class="container">
+            <h2 class="section-title mb-4 text-center">Популярные фильмы</h2>
+
+
+            <div class="movie-grid">
+                <!-- Все 20 фильмов внутри одного блока -->
+                <div class="movie-card"><img src="images-2.jpeg" alt="">
+                    <h5>Фильм 1</h5>
+                </div>
+                <div class="movie-card"><img src="images-2.jpeg" alt="">
+                    <h5>Фильм 2</h5>
+                </div>
+                <div class="movie-card"><img src="images-2.jpeg" alt="">
+                    <h5>Фильм 3</h5>
+                </div>
+                <div class="movie-card"><img src="images-2.jpeg" alt="">
+                    <h5>Фильм 4</h5>
+                </div>
+
+                <div class="movie-card"><img src="images-2.jpeg" alt="">
+                    <h5>Фильм 5</h5>
+                </div>
+                <div class="movie-card"><img src="images-2.jpeg" alt="">
+                    <h5>Фильм 6</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-7.jpg" alt="">
+                    <h5>Фильм 7</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-8.jpg" alt="">
+                    <h5>Фильм 8</h5>
+                </div>
+
+                <div class="movie-card"><img src="images/poster-9.jpg" alt="">
+                    <h5>Фильм 9</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-10.jpg" alt="">
+                    <h5>Фильм 10</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-11.jpg" alt="">
+                    <h5>Фильм 11</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-12.jpg" alt="">
+                    <h5>Фильм 12</h5>
+                </div>
+
+                <div class="movie-card"><img src="images/poster-13.jpg" alt="">
+                    <h5>Фильм 13</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-14.jpg" alt="">
+                    <h5>Фильм 14</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-15.jpg" alt="">
+                    <h5>Фильм 15</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-16.jpg" alt="">
+                    <h5>Фильм 16</h5>
+                </div>
+
+                <div class="movie-card"><img src="images/poster-17.jpg" alt="">
+                    <h5>Фильм 17</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-18.jpg" alt="">
+                    <h5>Фильм 18</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-19.jpg" alt="">
+                    <h5>Фильм 19</h5>
+                </div>
+                <div class="movie-card"><img src="images/poster-20.jpg" alt="">
+                    <h5>Фильм 20</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn gradient-btn px-5">Показать ещё</button>
+        </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT SECTION ====== -->
+    <section class="about py-5">
+        <div class="container text-center text-white">
+            <h2 class="mb-3">О нас</h2>
+            <p class="mx-auto" style="max-width: 700px;">
+                KinoLite — это современная онлайн-платформа для поиска и просмотра фильмов и сериалов.
+                Мы предлагаем пользователям удобный интерфейс, тёмную и светлую тему, а также возможность
+                добавлять любимые фильмы в профиль.
+            </p>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer py-3">
+        <div class="container text-center text-muted">
+            © 2025 KinoLite. Все права защищены.
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        toggle.addEventListener('click', () => {
+            const html = document.documentElement;
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            toggle.textContent = isDark ? '🌙' : '☀️';
+        });
+    </script>
+</body>
+
+</html>

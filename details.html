@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KinoLite — Movie details</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <span class="brand__logo" aria-hidden="true"></span>
+                <span>KinoLite</span>
+            </a>
+            <nav class="nav__links" aria-label="Main navigation">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="catalog.html">Catalog</a>
+                <a class="nav__link" href="profile.html">Profile</a>
+                <a class="nav__link" href="auth.html">Sign in</a>
+            </nav>
+            <div class="nav__actions">
+                <button id="themeToggle" class="btn btn--icon" aria-label="Toggle light/dark">🌓</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section class="details">
+            <div>
+                <div class="poster-lg">
+                    <img src="images/poster-1.jpg" alt="Poster: The Blue Horizon" />
+                </div>
+                <div class="row mt">
+                    <button class="btn">🎬 Trailer</button>
+                    <button class="btn btn--primary">★ Add to favorites</button>
+                </div>
+            </div>
+
+            <article class="card">
+                <h1 class="h1">The Blue Horizon <span class="badge">⭐ 8.3</span></h1>
+                <p class="muted mb">2024 · 2h10m · Drama, Adventure</p>
+                <p class="mb">
+                    A young pilot embarks on a record-breaking transoceanic flight, confronting storms, isolation and a
+                    hidden family past.
+                </p>
+                <hr class="hr mb">
+
+                <h2 class="h2">Details</h2>
+                <ul class="kv mb">
+                    <li><span class="muted">Director</span><span>Elena Morozova</span></li>
+                    <li><span class="muted">Cast</span><span>Aruzhan K., Timur S., Maya L.</span></li>
+                    <li><span class="muted">Country</span><span>Kazakhstan</span></li>
+                    <li><span class="muted">Language</span><span>English</span></li>
+                </ul>
+
+                <h2 class="h2">Synopsis</h2>
+                <p>
+                    Facing a closing weather window, she must decide between glory and safety as a mysterious radio
+                    signal
+                    changes her route forever.
+                </p>
+            </article>
+        </section>
+
+        <section class="mt" aria-labelledby="similar">
+            <h2 id="similar" class="h2 mb">Similar movies</h2>
+            <div class="grid">
+                <article class="movie card">
+                    <a href="details.html">
+                        <div class="movie__poster"><img src="images/poster-3.jpg" alt="Poster: Silent Echo" /></div>
+                        <h3 class="h3">Silent Echo</h3>
+                    </a>
+                    <div class="movie__meta"><span class="muted">2022 · Thriller</span><span class="badge">⭐ 8.1</span>
+                    </div>
+                </article>
+                <article class="movie card">
+                    <a href="details.html">
+                        <div class="movie__poster"><img src="images/poster-5.jpg" alt="Poster: Arctic Line" /></div>
+                        <h3 class="h3">Arctic Line</h3>
+                    </a>
+                    <div class="movie__meta"><span class="muted">2024 · Drama</span><span class="badge">⭐ 8.2</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container row">
+            <p>© 2025 KinoLite</p><span class="muted">Details</span>
+        </div>
+    </footer>
+</body>
+
+</html>
